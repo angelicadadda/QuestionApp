@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4de-Tq-olQ">
+                                <rect key="frame" x="65" y="213" width="119" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What book should you read?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da4-0j-q6g">
+                                <rect key="frame" x="116" y="253" width="278" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                <color key="textColor" red="0.37583847263814441" green="0.26434348976305627" blue="0.2127927630615091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.88235294819999999" green="0.71372550729999995" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-Mt-iXD">
+                                <rect key="frame" x="122" y="515" width="171" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQh-Oa-pBJ"/>
+                                    <segue destination="EM7-Qk-07i" kind="presentation" id="oom-cv-O6h"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="st,small,845x845-pad,1000x1000,f8f8f8" translatesAutoresizingMaskIntoConstraints="NO" id="sFT-1G-EGV">
+                                <rect key="frame" x="7" y="348" width="401" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.97006701619499769" blue="0.84562058232317572" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstCatImage" destination="sFT-1G-EGV" id="VMS-NI-GXA"/>
+                        <outlet property="quizTitle" destination="da4-0j-q6g" id="FHN-8D-3V7"/>
+                        <outlet property="quizTitleLong" destination="da4-0j-q6g" id="BA3-k8-8bC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ZoP-oS-gsu">
+            <objects>
+                <viewController id="EM7-Qk-07i" customClass="SecondViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6M-iM-MoT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-ht-Ml3">
+                                <rect key="frame" x="112" y="138" width="191" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="60"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qd-vh-YkZ">
+                                <rect key="frame" x="106" y="296" width="202" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.714380637886598" green="0.50245486980764109" blue="0.40446904955334884" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="YA Fantasy">
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="yaFantasyButton:" destination="EM7-Qk-07i" eventType="touchUpInside" id="cZ0-As-r6Q"/>
+                                    <segue destination="uPe-lI-CJc" kind="presentation" id="Uiu-Vl-5fk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-0R-rNp">
+                                <rect key="frame" x="106" y="464" width="202" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71438063789999995" green="0.50245486979999998" blue="0.40446904960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Contemporary">
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="contemporaryButton:" destination="EM7-Qk-07i" eventType="touchUpInside" id="Uxo-Bc-kSk"/>
+                                    <segue destination="uPe-lI-CJc" kind="presentation" id="eHN-wP-PC0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cathug" translatesAutoresizingMaskIntoConstraints="NO" id="F8M-uo-lJz">
+                                <rect key="frame" x="87" y="629" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vS2-aC-ibX"/>
+                        <color key="backgroundColor" red="1" green="0.97006701620000002" blue="0.84562058230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="genreTitle" destination="n1S-ht-Ml3" id="BVd-Pb-yZF"/>
+                        <outlet property="secondCatImage" destination="F8M-uo-lJz" id="WHa-Rk-Ngl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meH-L3-7zU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666.66666666666674" y="69.642857142857139"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="XXN-U3-A2u">
+            <objects>
+                <viewController id="uPe-lI-CJc" customClass="ThirdViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BfR-w3-zFD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trope?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrp-fQ-Cvr">
+                                <rect key="frame" x="112" y="124" width="184" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="60"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-am-7eJ">
+                                <rect key="frame" x="106" y="282" width="202" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71438063789999995" green="0.50245486979999998" blue="0.40446904960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Enemies to Lovers">
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enemiesToLoversButton:" destination="uPe-lI-CJc" eventType="touchUpInside" id="VwI-wG-0AB"/>
+                                    <segue destination="J0v-ZA-iqM" kind="presentation" id="CyT-dm-BhM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jt-li-FV6">
+                                <rect key="frame" x="106" y="450" width="202" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71438063789999995" green="0.50245486979999998" blue="0.40446904960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Second Chance Lovers">
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="secondChanceLoversButton:" destination="uPe-lI-CJc" eventType="touchUpInside" id="SHj-3M-Un8"/>
+                                    <segue destination="J0v-ZA-iqM" kind="presentation" id="cnb-Ic-We3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catinwater" translatesAutoresizingMaskIntoConstraints="NO" id="YBO-T9-Icf">
+                                <rect key="frame" x="87" y="615" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4rw-U8-a70"/>
+                        <color key="backgroundColor" red="1" green="0.97006701620000002" blue="0.84562058230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="thirdCatImage" destination="YBO-T9-Icf" id="8H3-0A-mKF"/>
+                        <outlet property="tropeTitle" destination="rrp-fQ-Cvr" id="ZYf-Nb-HKD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMl-47-v78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304" y="79"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="LOS-il-N68">
+            <objects>
+                <viewController id="J0v-ZA-iqM" customClass="FourthViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pG7-bJ-Ewj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rES-HC-9ln">
+                                <rect key="frame" x="106" y="287" width="202" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71438063789999995" green="0.50245486979999998" blue="0.40446904960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Suspense">
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="suspenseButton:" destination="J0v-ZA-iqM" eventType="touchUpInside" id="2jK-W6-Dsv"/>
+                                    <segue destination="2fc-PP-HfS" kind="presentation" id="Rhv-cq-9yg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnS-Sv-7wG">
+                                <rect key="frame" x="106" y="455" width="202" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71438063789999995" green="0.50245486979999998" blue="0.40446904960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Light Hearted">
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="lightHeartedButton:" destination="J0v-ZA-iqM" eventType="touchUpInside" id="1MQ-jY-Bi7"/>
+                                    <segue destination="2fc-PP-HfS" kind="presentation" id="mdm-Y8-QLc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catwithmilk" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-kQ-abr">
+                                <rect key="frame" x="87" y="620" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMG-yu-g2S">
+                                <rect key="frame" x="117" y="138" width="180" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="60"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vCS-Zq-vaD"/>
+                        <color key="backgroundColor" red="1" green="0.97006701620000002" blue="0.84562058230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="fourthCatImage" destination="bFr-kQ-abr" id="P1q-yU-2BO"/>
+                        <outlet property="moodTitle" destination="uMG-yu-g2S" id="pt0-Se-Mlr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxI-VZ-5Vf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959" y="78"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="6Oe-ks-37N">
+            <objects>
+                <viewController id="2fc-PP-HfS" customClass="FifthViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FOY-hT-nrJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You should read..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vt-hS-WsH">
+                                <rect key="frame" x="20" y="181" width="330" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dance of Thieves by Mary E. Pearson " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXs-Qx-SOQ">
+                                <rect key="frame" x="28" y="428" width="373" height="352"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4y-DQ-XC3">
+                                <rect key="frame" x="91" y="399" width="232" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41568624970000001" green="0.2941176593" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SHOW RESULTS">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showResultsButton:" destination="2fc-PP-HfS" eventType="touchUpInside" id="YQe-v2-S45"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bw-FG-LIA">
+                                <rect key="frame" x="276" y="767" width="118" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="RESTART">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                    <color key="baseBackgroundColor" red="0.52486710700000005" green="0.01284875303" blue="0.0" alpha="0.73788265310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButton:" destination="2fc-PP-HfS" eventType="touchUpInside" id="Pea-37-01R"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Uue-3V-qLC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="st,small,845x845-pad,1000x1000,f8f8f8" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-0n-oZH">
+                                <rect key="frame" x="14" y="230" width="401" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="35796008" translatesAutoresizingMaskIntoConstraints="NO" id="0D7-Xy-IfK">
+                                <rect key="frame" x="-71" y="244" width="556" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="55502885" translatesAutoresizingMaskIntoConstraints="NO" id="fsP-ib-7G4">
+                                <rect key="frame" x="-73" y="245" width="560" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dial A for Aunties by Jesse Q. Sutanto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEk-Sb-7Py">
+                                <rect key="frame" x="28" y="520" width="366" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                <color key="textColor" red="0.37583847259999997" green="0.2643434898" blue="0.2127927631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="px1-Uv-v0Z"/>
+                        <color key="backgroundColor" red="1" green="0.97006701620000002" blue="0.84562058230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="danceOfThievesImage" destination="0D7-Xy-IfK" id="PIX-5F-V4J"/>
+                        <outlet property="danceOfThievesSubtitle" destination="AXs-Qx-SOQ" id="oAE-Ru-mA9"/>
+                        <outlet property="dialAForAuntiesImage" destination="fsP-ib-7G4" id="f5J-hK-uAa"/>
+                        <outlet property="dialAForAuntiesSubtitle" destination="kEk-Sb-7Py" id="vHI-G6-6cM"/>
+                        <outlet property="fifthCatImage" destination="lfM-0n-oZH" id="vjP-af-CAA"/>
+                        <outlet property="finalTitle" destination="9Vt-hS-WsH" id="pLd-FN-Jgc"/>
+                        <outlet property="showResultsOutlet" destination="g4y-DQ-XC3" id="Wbr-P8-VZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVc-DH-qpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2605.7971014492755" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rhv-cq-9yg"/>
+        <segue reference="cnb-Ic-We3"/>
+        <segue reference="Uiu-Vl-5fk"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="35796008" width="312" height="475"/>
+        <image name="55502885" width="467" height="700"/>
+        <image name="cathug" width="359" height="280"/>
+        <image name="catinwater" width="820" height="687"/>
+        <image name="catwithmilk" width="840" height="554"/>
+        <image name="st,small,845x845-pad,1000x1000,f8f8f8" width="1000" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
